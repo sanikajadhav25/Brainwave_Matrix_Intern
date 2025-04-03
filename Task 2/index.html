@@ -1,1 +1,90 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Inventors & Inventions</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .enter {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            background: #f39c12;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+        }
+        .enter:hover {
+            background: #e67e22;
+        }
+        /* Shapes */
+        .shape {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            opacity: 0.7;
+        }
+        .shape.circle1 {
+            width: 100px;
+            height: 100px;
+            top: 10%;
+            left: 15%;
+        }
+        .shape.circle2 {
+            width: 150px;
+            height: 150px;
+            top: 70%;
+            right: 10%;
+        }
+        .shape.triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid rgba(255, 255, 255, 0.2);
+            position: absolute;
+            top: 40%;
+            left: 75%;
+        }
+    </style>
+</head>
+<body>
+    <div class="shape circle1"></div>
+    <div class="shape circle2"></div>
+    <div class="shape triangle"></div>
+    
+    <div class="container">
+        <h1>Welcome to the World of Great Inventors</h1>
+        <p>Discover the brilliant minds behind some of the most impactful inventions in the history of technology. Learn about their discoveries and how they shaped the modern world.</p>
+        <a href="home.html" class="enter">Enter the Site</a>
+    </div>
+</body>
+</html>
